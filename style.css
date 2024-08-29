@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #ebeaea;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 11vh;
+    width: 97vw;
+    padding: 0px 10vw 0px 10vw;
+    margin: 10px;
+    background-color: white;
+    border-radius: 1vw;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+nav >img{
+    object-fit: cover;
+    width: 70px;
+    height: 70px;
+}
+nav > ul {
+    display: flex;
+}
+nav > ul li{
+    list-style-type: none;
+    margin-right: 10px;
+    border-right: 2px solid #bababa;
+}
+nav > ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding: 20px;
+    transition: 0.4s ease;
+}
+nav > ul li a:hover{
+    background-color: rgb(247 243 0);
+    border-radius: 0.7vw;
+}
+nav > ul li:hover{
+    border-color: transparent;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 10vw 0vh 10vw;
+    padding-top: 20vh;
+    background-color: rgb(247 243 0);
+}
+
+.main-0 > h1 >strong{
+    font-weight: 900;
+    font-size: 8vh;
+    color: #033a7b;
+}
+.main-0 > h1{
+    font-size: 7vh;
+    margin-bottom: 2vh;
+}
+.main-img{
+    height: 35vh;
+}
+.section{
+    min-height: 82vh;
+    background-color: white;
+}
+
+
+/* General Styles */
+
+
+main {
+    padding: 20px;
+}
+.section{
+    height: 100%;
+    background-color: #ebeaea;
+}
+.section > h1{
+    font-size: 5vh;
+    font-weight: 800;
+    text-align: center;
+}
+.section >center table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 10vh;
+}
+.section >center table td,th{
+    padding: 20px 57px;
+}
+.ctn{
+    display: flex;
+}
+
+.registration{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 68vh;
+}
+
+.registration form{
+    padding: 2vw;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    border-radius: 5px;
+
+}
+.registration li{
+    list-style-type: none;
+    margin-bottom: 2vh;
+}
+.registration li input{
+    height: 2vh;
+    width: 39vw;
+    padding: 3vh;
+    margin-top: 1.5vh;
+}
+.registration button{
+    padding: 0.8vw 1.9vw;
+    border: 0.6px solid #535353;
+    font-weight: 700;
+}
+.ctn #dore-1{
+    position: absolute;
+    height: 56vh;
+}
+.ctn #dore-2{
+    position: absolute;
+    right: 4%;
+    bottom: 25%;
+    height: 41vh;
+}
+.ctn #shin-1{
+    position: absolute;
+    left: 4%;
+    bottom: 25%;
+    opacity: 0.9;
+}
+.ctn #shin-2{
+    position: absolute;
+    right: 4%;
+    bottom: 25%;
+    opacity: 0.9;
+}
+/* Book Container */
+.book-container {
+    display: flex;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 40px;
+    padding-bottom: 10vh;
+}
+
+/* Individual Book */
+.book {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 30px;
+    width: 21vw;
+    height: 55vh;
+    margin-bottom: 10vh;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.book img {
+    width: 10vw;
+    height:27vh;
+    display: block;
+    margin: auto;
+}
+
+.book-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.book-info h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.book-info p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.buy-now {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 2%;
+    align-content: center;
+}
+
+/* Hover Effects */
+.book:hover {
+    transform: translateY(-10px);
+}
+
+.book:hover .buy-now {
+    background-color: #0056b3;
+}
